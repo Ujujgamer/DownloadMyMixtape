@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a{
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
+.container{
+    width: 100%;
+}
+
+.leaderboard{
+    width: 100%;
+}
+
+.click{
+    margin-bottom: 20px;
+    width: 400px !important;
+    height: 100px;
+    box-shadow: 0 7px #999;
+    border-radius: 10%;
+    background-image: url(https://secure.gravatar.com/avatar/e24a106e9475c196b82fadc207e5242a?s=96&d=mm&r=g);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: none;
+    outline: none;
+}
+
+.click:active {
+    box-shadow: 0 5px #666;
+    border-radius: 10%;
+    background-image: url(https://secure.gravatar.com/avatar/e24a106e9475c196b82fadc207e5242a?s=96&d=mm&r=g);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    transform: translateY(2px);
+}
+
+.buy{
+    margin-bottom: 20px;
+    width: 400px !important;
+    height: 100px;
+    box-shadow: 0 7px #999;
+    border-radius: 10%;
+    background-image: url(http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/arrow-download-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: none;
+    outline: none;
+}
+
+.buy:active {
+    box-shadow: 0 5px #666;
+    border-radius: 10%;
+    background-image: url(http://icons.iconarchive.com/icons/graphicloads/100-flat-2/256/arrow-download-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(4px);
+}
+
+.grammy{
+    margin-bottom: 20px;
+    width: 400px !important;
+    height: 100px;
+    box-shadow: 0 7px #999;
+    border-radius: 10%;
+    background-image: url(https://www.nrcc.org/wp-content/uploads/2016/02/cash.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: none;
+    outline: none;
+}
+
+.grammy:active {
+    box-shadow: 0 5px #666;
+    border-radius: 10%;
+    background-image: url(https://www.nrcc.org/wp-content/uploads/2016/02/cash.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(4px);
+}
+
+.colgrammy{
+    margin-bottom: 20px;
+    width: 400px !important;
+    height: 100px;
+    box-shadow: 0 7px #999;
+    border-radius: 10%;
+    background-image: url(http://vignette2.wikia.nocookie.net/pawnstarsthegame/images/2/2e/1970_Grammy_Award.png/revision/latest?cb=20160427002200);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: none;
+    outline: none;
+}
+
+.colgrammy:active {
+    box-shadow: 0 5px #666;
+    border-radius: 10%;
+    background-image: url(http://vignette2.wikia.nocookie.net/pawnstarsthegame/images/2/2e/1970_Grammy_Award.png/revision/latest?cb=20160427002200);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(4px);
+}
+
+.reset{
+    margin-bottom: 20px;
+    width: 400px !important;
+    height: 100px;
+    box-shadow: 0 7px #999;
+    border-radius: 10%;
+    background-image: url(http://downloadicons.net/sites/default/files/eraser-icon-38164.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    border: none;
+    outline: none;
+}
+
+.reset:active {
+    box-shadow: 0 5px #666;
+    border-radius: 10%;
+    background-image: url(http://downloadicons.net/sites/default/files/eraser-icon-38164.png);
+    background-size: contain;
+    transform: translateY(4px);
+}
+
+#lilb{
+    margin-bottom: 30px;
+    box-shadow: 0 9px #999;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    height: 150px;
+    width: 150px;
+    border: none;
+    outline: none;
+}
+
+#lilb:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+#schoolboy {
+    box-shadow: 0 9px #999;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    height: 150px;
+    width: 150px;
+    border: none;
+    outline: none;
+}
+
+#schoolboy:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    margin-right: 100px;
+    height: 150px;
+    width: 150px;
+}
+
+#kanye {
+    box-shadow: 0 9px #999;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 150px;
+    border: none;
+    outline: none;
+}
+
+#kanye:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border-radius: 50%;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 150px;
+}

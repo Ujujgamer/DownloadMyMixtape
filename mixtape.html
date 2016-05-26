@@ -1,0 +1,60 @@
+<head>
+  <title>DMMF</title>
+  <meta name="description" content="Another version of cookie clicker.">
+</head>
+
+<body>
+        <nav>
+            <ul>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/settings">Settings</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <div class="container">
+    <div id="header">
+    </div>
+    <h1 class="h1">Download My Mixtape, Fam</h1>
+    {{> leaderboard}}
+  </div>
+    </div>
+</body>
+
+<template name="leaderboard">
+  <table class="leaderboard table table-striped">
+    <thead>
+      <th>Username</th><th>Downloads</th><th>Downloads per Second</th><th>Grammys</th>
+    </thead>
+
+    <tbody>
+      {{#each players}}
+        {{> player}}
+      {{/each}}
+    </tbody>
+  </table>
+
+  <h2>{{#if currentUser}}You ({{user.username}}) have {{formatCurrency user.downloads}} downloads, make {{formatCurrency user.rate}} downloads per second, and have {{formatCurrency user.grammy}} Grammys! {{else}}Sign in to play!{{/if}}</h2>
+    {{> loginButtons}} <br>
+    <input type="button" class="click btn span4" value="Make a banger (+10 DLs)" />
+    {{#each items}}
+    <input type="button" class="buy btn span4" id="{{cost}}" value="Buy {{name}} (-{{formatCurrency cost}} DLs)" />
+    {{/each}}
+    <input type="button" class="colgrammy btn span4" value="Accept your grammy (+1)" />
+    <input type="button" class="grammy btn span4" value="Cash in your Grammy (DLs x2.0)" />
+    <input type="button" class="reset btn span4" value="Reset all progress" />
+    <br>
+    <h2>Produce for Rappers</h2>
+    <input type="image" src="http://www.tbdfest.com/wp-content/uploads/2015/06/chance-the-rapper-lg1.png" class="lilb btn span4" id="lilb"/>
+    <input type="image" src="http://ih1.redbubble.net/image.69377840.4536/sticker,375x360.u3.png" class="schoolboy btn span4" id="schoolboy"/>
+    <input type="image" src="https://forum.sectioneighty.com/data/avatars/l/27089/27089888.jpg?1428612942" class="kanye btn span4" id="kanye"/>
+</template>
+<template name="player">
+  <tr class="player">
+    <td class="name">{{username}}</td>
+    <td class="downloads">{{formatCurrency downloads}}</td>
+    <td class="rate">{{formatCurrency rate}} dps</td>
+    <td class="grammys">{{formatCurrency grammys}}</td>
+  </tr>
+</template>
